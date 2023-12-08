@@ -1,0 +1,17 @@
+*{
+    background-color:white;
+    color:rgb(246, 192, 146);
+}
+select{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    border-color: rgb(246, 192, 146);
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+select:hover{
+    background-color: rgb(246, 192, 146);
+    color: brown;
+}
