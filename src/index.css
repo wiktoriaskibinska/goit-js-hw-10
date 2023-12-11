@@ -1,17 +1,50 @@
 *{
     background-color:white;
-    color:rgb(246, 192, 146);
-}
-select{
-    width: 200px;
-    height: 40px;
-    border-radius: 15px;
-    border-color: rgb(246, 192, 146);
-    font-weight: 600;
-    margin-bottom: 30px;
-
+    color:rgb(128, 82, 42);
+    font-size:x-large;
+  
+    
 }
 select:hover{
     background-color: rgb(246, 192, 146);
     color: brown;
 }
+select svg{
+    display: none;
+}
+h2{
+    font-size: xx-large;
+    background:none;
+    margin-left: 30px;
+}
+.loader{
+    background:none;
+}
+.cat-info{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+    margin-bottom: 100px;
+    padding: 30px;
+   border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 6px 20px rgba(0,0,0,.19);
+    
+}
+.cat-text{
+        
+   
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.cat-img{
+    display: flex;
+    justify-content: center;
+}
+
