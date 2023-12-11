@@ -5,13 +5,7 @@
   
     
 }
-select:hover{
-    background-color: rgb(246, 192, 146);
-    color: brown;
-}
-select svg{
-    display: none;
-}
+
 h2{
     font-size: xx-large;
     background:none;

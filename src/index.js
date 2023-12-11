@@ -24,7 +24,7 @@ let storedBreeds = [];
     fetchBreeds().then(
     
         data => {
-            selectInput.style.display='block'
+            selectInput.style.display='flex'
         loader.style.display='none'
             storedBreeds = data;
     
@@ -38,14 +38,9 @@ let storedBreeds = [];
 
     
             };
-              new SlimSelect({
-                  select: selectInput,
-                  settings: {
-                      showSearch: false,
-                  }
-                
-                  
-})
+            new SlimSelect({
+                select: selectInput,
+            });
         },).catch(error => {
             Notiflix.Report.failure(
                 'Error!',
@@ -58,7 +53,7 @@ let storedBreeds = [];
 
 //
 selectInput.addEventListener("change", event => {
-    loader.style.display = 'block';
+    loader.style.display = 'flex';
     catInfo.style.display = 'none';
     let breedId = event.currentTarget.value;
     console.log(breedId);
@@ -75,7 +70,7 @@ selectInput.addEventListener("change", event => {
             <h2> ${data[0].breeds[0].name}</h2>
             <p>${data[0].breeds[0].description}</p>
             </div>`  
-            catInfo.style.display = 'block'
+            catInfo.style.display = 'flex'
             
 }
     ).catch(error => {
